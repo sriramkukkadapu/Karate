@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/features/json.feature" skipped="0" tests="2" time="0.010859">
+  <testcase classname="src.test.java.features.json" name="Hello world scenario" time="0.004033">
+    <system-out>* print 'hello world' ..................................................... passed
+* print 'hello sriram kukkadapu' .......................................... passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.features.json" name="declare and print variables" time="0.006826">
+    <system-out>* print 'hello world' ..................................................... passed
+* print 'hello sriram kukkadapu' .......................................... passed
+* def balance = 200 ....................................................... passed
+* def pi = 3.14 ........................................................... passed
+* print 'total = ' + balance * pi ......................................... passed</system-out>
+  </testcase>
+</testsuite>

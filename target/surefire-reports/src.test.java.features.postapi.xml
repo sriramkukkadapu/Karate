@@ -1,0 +1,18 @@
+<testsuite failures="1" name="src/test/java/features/postapi.feature" skipped="0" tests="1" time="0.789273">
+  <testcase classname="src.test.java.features.postapi" name="Create user with given data" time="0.789273">
+    <failure message="postapi.feature:19 - path: $.data.id, actual: null, expected: '#present', reason: actual json-path does not exist">* url 'https://gorest.co.in' .............................................. passed
+* def body = .............................................................. passed
+Given path '/public/v1/users' ............................................. passed
+And request body .......................................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 422 ........................................................... passed
+And match $.data.id == "#present" ......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: postapi.feature:19 - path: $.data.id, actual: null, expected: '#present', reason: actual json-path does not exist
+	at ✽.And match $.data.id == "#present" (postapi.feature:19)
+
+And match $.data.email == "sriramkukkadapu@gmail.com" ..................... skipped</failure>
+  </testcase>
+</testsuite>

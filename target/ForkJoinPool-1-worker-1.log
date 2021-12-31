@@ -1,0 +1,86 @@
+08:19:13.292 [print] 1zgAMysQFA@gmail.com
+08:19:13.301 [print] {
+  "name": "Sriram K",
+  "gender": "male",
+  "status": "active",
+  "email": "1zgAMysQFA@gmail.com"
+}
+
+08:19:13.602 request:
+1 > POST https://gorest.co.in/public/v1/users
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+1 > Connection: Keep-Alive
+1 > Content-Length: 84
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+{"name":"Sriram K","gender":"male","status":"active","email":"1zgAMysQFA@gmail.com"}
+
+08:19:14.105 response time in milliseconds: 501.54
+1 < 201
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 31 Dec 2021 14:21:21 GMT
+1 < ETag: W/"73f38c921c7ccf4ceb030098da79361f"
+1 < Location: https://gorest.co.in/public/v1/users/10071
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 482e9869-e660-4ab2-a90c-e931235ccf75
+1 < X-Runtime: 0.020073
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"id":10071,"name":"Sriram K","email":"1zgAMysQFA@gmail.com","gender":"male","status":"active"}}
+
+08:17:31.372 assertion failed: path: $.data.email, actual: 'tmvJXzDE3p@gmail.com', expected: 'sriramkukkadapu@gmail.com', reason: not equal
+:"male","name":"Sriram K","id":10067,"email":"K5V5N4Tql2@gmail.com","status":"active"},"meta":null}
+cy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: ff5eb16f-7a44-4683-af61-b762147a6427
+1 < X-Runtime: 0.010956
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"id":30,"name":"Narendra Modi","email":"namobharat@gmai.com","gender":"male","status":"active"}}
+
+07:21:08.720 request:
+1 > GET https://gorest.co.in/public/v1/users/30
+1 > Accept-Encoding: gzip,deflate
+1 > Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+1 > Host: gorest.co.in
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+1 > connection: keep-alive
+
+07:21:09.077 response time in milliseconds: 356.69
+1 < 200
+1 < Cache-Control: max-age=0, private, must-revalidate
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 31 Dec 2021 13:23:16 GMT
+1 < ETag: W/"db238a4ddd80ccad33815dffafdd4a09"
+1 < Referrer-Policy: strict-origin-when-cross-origin
+1 < Server: nginx
+1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 < Transfer-Encoding: chunked
+1 < Vary: [Accept-Encoding, Origin]
+1 < X-Content-Type-Options: nosniff
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Request-Id: 4cfa6229-7790-40e3-a1b3-64f82cba43fe
+1 < X-Runtime: 0.009718
+1 < X-XSS-Protection: 0
+{"meta":null,"data":{"id":30,"name":"Narendra Modi","email":"namobharat@gmai.com","gender":"male","status":"active"}}
+
