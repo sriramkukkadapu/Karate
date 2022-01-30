@@ -1,12 +1,12 @@
-08:19:13.292 [print] 1zgAMysQFA@gmail.com
-08:19:13.301 [print] {
+06:13:44.668 [print] ebSK8IQ1wQ@gmail.com
+06:13:44.678 [print] {
   "name": "Sriram K",
   "gender": "male",
   "status": "active",
-  "email": "1zgAMysQFA@gmail.com"
+  "email": "ebSK8IQ1wQ@gmail.com"
 }
 
-08:19:13.602 request:
+06:13:45.017 request:
 1 > POST https://gorest.co.in/public/v1/users
 1 > Accept-Encoding: gzip,deflate
 1 > Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
@@ -15,16 +15,16 @@
 1 > Content-Type: application/json; charset=UTF-8
 1 > Host: gorest.co.in
 1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
-{"name":"Sriram K","gender":"male","status":"active","email":"1zgAMysQFA@gmail.com"}
+{"name":"Sriram K","gender":"male","status":"active","email":"ebSK8IQ1wQ@gmail.com"}
 
-08:19:14.105 response time in milliseconds: 501.54
+06:13:45.608 response time in milliseconds: 590.42
 1 < 201
 1 < Cache-Control: max-age=0, private, must-revalidate
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 31 Dec 2021 14:21:21 GMT
-1 < ETag: W/"73f38c921c7ccf4ceb030098da79361f"
-1 < Location: https://gorest.co.in/public/v1/users/10071
+1 < Date: Sun, 30 Jan 2022 12:16:10 GMT
+1 < ETag: W/"153e4f4dbfe30433627c86ffca823ff9"
+1 < Location: https://gorest.co.in/public/v1/users/2642
 1 < Referrer-Policy: strict-origin-when-cross-origin
 1 < Server: nginx
 1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
@@ -34,53 +34,70 @@
 1 < X-Download-Options: noopen
 1 < X-Frame-Options: SAMEORIGIN
 1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: 482e9869-e660-4ab2-a90c-e931235ccf75
-1 < X-Runtime: 0.020073
+1 < X-RateLimit-Limit: 90
+1 < X-RateLimit-Remaining: 89
+1 < X-RateLimit-Reset: 1
+1 < X-Request-Id: d6d53ab4-e13f-485a-a6c4-0eccb4096bf1
+1 < X-Runtime: 0.033266
 1 < X-XSS-Protection: 0
-{"meta":null,"data":{"id":10071,"name":"Sriram K","email":"1zgAMysQFA@gmail.com","gender":"male","status":"active"}}
+{"meta":null,"data":{"id":2642,"name":"Sriram K","email":"ebSK8IQ1wQ@gmail.com","gender":"male","status":"active"}}
 
-08:17:31.372 assertion failed: path: $.data.email, actual: 'tmvJXzDE3p@gmail.com', expected: 'sriramkukkadapu@gmail.com', reason: not equal
-:"male","name":"Sriram K","id":10067,"email":"K5V5N4Tql2@gmail.com","status":"active"},"meta":null}
-cy: strict-origin-when-cross-origin
-1 < Server: nginx
-1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 < Transfer-Encoding: chunked
-1 < Vary: [Accept-Encoding, Origin]
-1 < X-Content-Type-Options: nosniff
-1 < X-Download-Options: noopen
-1 < X-Frame-Options: SAMEORIGIN
-1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: ff5eb16f-7a44-4683-af61-b762147a6427
-1 < X-Runtime: 0.010956
-1 < X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Narendra Modi","email":"namobharat@gmai.com","gender":"male","status":"active"}}
+06:13:45.615 request:
+2 > DELETE https://gorest.co.in/public/v1/users/2642
+2 > Accept-Encoding: gzip,deflate
+2 > Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+2 > Connection: Keep-Alive
+2 > Host: gorest.co.in
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
 
-07:21:08.720 request:
-1 > GET https://gorest.co.in/public/v1/users/30
-1 > Accept-Encoding: gzip,deflate
-1 > Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
-1 > Host: gorest.co.in
-1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
-1 > connection: keep-alive
+06:13:46.029 response time in milliseconds: 414.02
+2 < 204
+2 < Cache-Control: no-cache
+2 < Connection: keep-alive
+2 < Date: Sun, 30 Jan 2022 12:16:11 GMT
+2 < Referrer-Policy: strict-origin-when-cross-origin
+2 < Server: nginx
+2 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 < Vary: Origin
+2 < X-Content-Type-Options: nosniff
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-RateLimit-Limit: 90
+2 < X-RateLimit-Remaining: 89
+2 < X-RateLimit-Reset: 2
+2 < X-Request-Id: 2921ceda-bb65-4c2e-bfe6-bfb261788997
+2 < X-Runtime: 0.022003
+2 < X-XSS-Protection: 0
 
-07:21:09.077 response time in milliseconds: 356.69
-1 < 200
-1 < Cache-Control: max-age=0, private, must-revalidate
-1 < Connection: keep-alive
-1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 31 Dec 2021 13:23:16 GMT
-1 < ETag: W/"db238a4ddd80ccad33815dffafdd4a09"
-1 < Referrer-Policy: strict-origin-when-cross-origin
-1 < Server: nginx
-1 < Strict-Transport-Security: max-age=63072000; includeSubDomains
-1 < Transfer-Encoding: chunked
-1 < Vary: [Accept-Encoding, Origin]
-1 < X-Content-Type-Options: nosniff
-1 < X-Download-Options: noopen
-1 < X-Frame-Options: SAMEORIGIN
-1 < X-Permitted-Cross-Domain-Policies: none
-1 < X-Request-Id: 4cfa6229-7790-40e3-a1b3-64f82cba43fe
-1 < X-Runtime: 0.009718
-1 < X-XSS-Protection: 0
-{"meta":null,"data":{"id":30,"name":"Narendra Modi","email":"namobharat@gmai.com","gender":"male","status":"active"}}
+06:13:46.031 request:
+3 > GET https://gorest.co.in/public/v1/users/2642
+3 > Accept-Encoding: gzip,deflate
+3 > Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+3 > Connection: Keep-Alive
+3 > Host: gorest.co.in
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+06:13:46.460 response time in milliseconds: 427.59
+3 < 404
+3 < Cache-Control: no-cache
+3 < Connection: keep-alive
+3 < Content-Type: application/json; charset=utf-8
+3 < Date: Sun, 30 Jan 2022 12:16:11 GMT
+3 < Referrer-Policy: strict-origin-when-cross-origin
+3 < Server: nginx
+3 < Strict-Transport-Security: max-age=63072000; includeSubDomains
+3 < Transfer-Encoding: chunked
+3 < Vary: [Accept-Encoding, Origin]
+3 < X-Content-Type-Options: nosniff
+3 < X-Download-Options: noopen
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-Permitted-Cross-Domain-Policies: none
+3 < X-RateLimit-Limit: 90
+3 < X-RateLimit-Remaining: 88
+3 < X-RateLimit-Reset: 2
+3 < X-Request-Id: 93218891-11b2-4ec5-ae4e-717a41182481
+3 < X-Runtime: 0.021393
+3 < X-XSS-Protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}
 

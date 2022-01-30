@@ -1,48 +1,8 @@
-<testsuite failures="1" name="src/test/java/features/getapi.feature" skipped="0" tests="2" time="1.32376">
-  <testcase classname="src.test.java.features.getapi" name="GET user details" time="0.932963">
-    <failure message="getapi.feature:15 - path: $, actual: 'Narendra Modi', expected: 'Bilwa Kaul II', reason: not equal">Given url baseUrl+'/public/v1/users' ...................................... passed
-And path '30' ............................................................. passed
-When method GET ........................................................... passed
-Then status 200 ........................................................... passed
-* print response .......................................................... passed
-* def res = response ...................................................... passed
-* print res ............................................................... passed
-* def actName = res.data.name ............................................. passed
-* def actId = res.data.id ................................................. passed
-* def actEmail = res.data.email ........................................... passed
-* print actName ........................................................... passed
-* match actName == 'Bilwa Kaul II' ........................................ failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: getapi.feature:15 - path: $, actual: 'Narendra Modi', expected: 'Bilwa Kaul II', reason: not equal
-	at ✽.* match actName == 'Bilwa Kaul II' (getapi.feature:15)
-
-* match actId == 30 ....................................................... skipped
-* match actEmail == 'ii_bilwa_kaul@harvey.info' ........................... skipped</failure>
+<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="2" time="0">
+  <testcase classname="src.test.java.features.getapi" name="GET user details" time="0">
+    <system-out/>
   </testcase>
-  <testcase classname="src.test.java.features.getapi" name="GET user details - User not found" time="0.390797">
-    <system-out>Given url baseUrl+'/public/v1/users' ...................................... passed
-And path '30' ............................................................. passed
-When method GET ........................................................... passed
-Then status 200 ........................................................... passed
-* print response .......................................................... passed
-* def res = response ...................................................... passed
-* print res ............................................................... passed
-* def actName = res.data.name ............................................. passed
-* def actId = res.data.id ................................................. passed
-* def actEmail = res.data.email ........................................... passed
-* print actName ........................................................... passed
-* match actName == 'Bilwa Kaul II' ........................................ failed
-
-Stack Trace:
-com.intuit.karate.exception.KarateException: getapi.feature:15 - path: $, actual: 'Narendra Modi', expected: 'Bilwa Kaul II', reason: not equal
-	at ✽.* match actName == 'Bilwa Kaul II' (getapi.feature:15)
-
-* match actId == 30 ....................................................... skipped
-* match actEmail == 'ii_bilwa_kaul@harvey.info' ........................... skipped
-Given url 'https://gorest.co.in/public/v1/users' .......................... passed
-And path '0' .............................................................. passed
-When method GET ........................................................... passed
-Then status 404 ........................................................... passed</system-out>
+  <testcase classname="src.test.java.features.getapi" name="GET user details - User not found" time="0">
+    <system-out/>
   </testcase>
 </testsuite>

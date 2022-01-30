@@ -1,45 +1,45 @@
-<testsuite failures="1" name="src/test/java/features/getapiex.feature" skipped="0" tests="2" time="9.058943">
-  <testcase classname="src.test.java.features.getapiex" name="GET user details" time="5.46251">
-    <failure message="getapiex.feature:7 - status code was: 404, expected: 200, response time: 5116, url: https://gorest.co.in/public/v1/users/30, response: {&quot;data&quot;:{&quot;message&quot;:&quot;Resource not found&quot;},&quot;meta&quot;:null}">Given url baseUrl+'/public/v1/users' ...................................... passed
+<testsuite failures="1" name="src/test/java/features/getapiex.feature" skipped="0" tests="2" time="1.555564">
+  <testcase classname="src.test.java.features.getapiex" name="GET user details" time="1.089559">
+    <failure message="getapiex.feature:16 - path: $, actual: 'Ms. Bhaumik Jain', expected: 'Bilwa Kaul II', reason: not equal">Given url baseUrl+'/public/v1/users' ...................................... passed
 And path '30' ............................................................. passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... failed
+Then status 200 ........................................................... passed
+* print baseUrl+'/public/v1/users' ........................................ passed
+* print response .......................................................... passed
+* def res = response ...................................................... passed
+* print res ............................................................... passed
+* def actName = res.data.name ............................................. passed
+* def actId = res.data.id ................................................. passed
+* def actEmail = res.data.email ........................................... passed
+* print actName ........................................................... passed
+* match actName == 'Bilwa Kaul II' ........................................ failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: getapiex.feature:7 - status code was: 404, expected: 200, response time: 5116, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}
-	at ✽.Then status 200 (getapiex.feature:7)
+com.intuit.karate.exception.KarateException: getapiex.feature:16 - path: $, actual: 'Ms. Bhaumik Jain', expected: 'Bilwa Kaul II', reason: not equal
+	at ✽.* match actName == 'Bilwa Kaul II' (getapiex.feature:16)
 
-* print baseUrl+'/public/v1/users' ........................................ skipped
-* print response .......................................................... skipped
-* def res = response ...................................................... skipped
-* print res ............................................................... skipped
-* def actName = res.data.name ............................................. skipped
-* def actId = res.data.id ................................................. skipped
-* def actEmail = res.data.email ........................................... skipped
-* print actName ........................................................... skipped
-* match actName == 'Bilwa Kaul II' ........................................ skipped
 * match actId == 30 ....................................................... skipped
 * match actEmail == 'ii_bilwa_kaul@harvey.info' ........................... skipped</failure>
   </testcase>
-  <testcase classname="src.test.java.features.getapiex" name="GET user details - User not found" time="3.596433">
+  <testcase classname="src.test.java.features.getapiex" name="GET user details - User not found" time="0.466005">
     <system-out>Given url baseUrl+'/public/v1/users' ...................................... passed
 And path '30' ............................................................. passed
 When method GET ........................................................... passed
-Then status 200 ........................................................... failed
+Then status 200 ........................................................... passed
+* print baseUrl+'/public/v1/users' ........................................ passed
+* print response .......................................................... passed
+* def res = response ...................................................... passed
+* print res ............................................................... passed
+* def actName = res.data.name ............................................. passed
+* def actId = res.data.id ................................................. passed
+* def actEmail = res.data.email ........................................... passed
+* print actName ........................................................... passed
+* match actName == 'Bilwa Kaul II' ........................................ failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: getapiex.feature:7 - status code was: 404, expected: 200, response time: 5116, url: https://gorest.co.in/public/v1/users/30, response: {"data":{"message":"Resource not found"},"meta":null}
-	at ✽.Then status 200 (getapiex.feature:7)
+com.intuit.karate.exception.KarateException: getapiex.feature:16 - path: $, actual: 'Ms. Bhaumik Jain', expected: 'Bilwa Kaul II', reason: not equal
+	at ✽.* match actName == 'Bilwa Kaul II' (getapiex.feature:16)
 
-* print baseUrl+'/public/v1/users' ........................................ skipped
-* print response .......................................................... skipped
-* def res = response ...................................................... skipped
-* print res ............................................................... skipped
-* def actName = res.data.name ............................................. skipped
-* def actId = res.data.id ................................................. skipped
-* def actEmail = res.data.email ........................................... skipped
-* print actName ........................................................... skipped
-* match actName == 'Bilwa Kaul II' ........................................ skipped
 * match actId == 30 ....................................................... skipped
 * match actEmail == 'ii_bilwa_kaul@harvey.info' ........................... skipped
 Given url 'https://gorest.co.in/public/v1/users' .......................... passed

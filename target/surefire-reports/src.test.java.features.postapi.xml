@@ -1,18 +1,18 @@
-<testsuite failures="1" name="src/test/java/features/postapi.feature" skipped="0" tests="1" time="0.789273">
-  <testcase classname="src.test.java.features.postapi" name="Create user with given data" time="0.789273">
-    <failure message="postapi.feature:19 - path: $.data.id, actual: null, expected: '#present', reason: actual json-path does not exist">* url 'https://gorest.co.in' .............................................. passed
+<testsuite failures="1" name="src/test/java/features/postapi.feature" skipped="0" tests="1" time="0.972098">
+  <testcase classname="src.test.java.features.postapi" name="Create user with given data" time="0.972098">
+    <failure message="postapi.feature:18 - status code was: 201, expected: 422, response time: 680, url: https://gorest.co.in/public/v1/users, response: {&quot;data&quot;:{&quot;gender&quot;:&quot;male&quot;,&quot;name&quot;:&quot;Sriram K&quot;,&quot;id&quot;:1709,&quot;email&quot;:&quot;sriramkukkadapu@gmail.com&quot;,&quot;status&quot;:&quot;active&quot;},&quot;meta&quot;:null}">* url 'https://gorest.co.in' .............................................. passed
 * def body = .............................................................. passed
 Given path '/public/v1/users' ............................................. passed
 And request body .......................................................... passed
 And header Authorization = 'Bearer ' + tokenID ............................ passed
 When method post .......................................................... passed
-Then status 422 ........................................................... passed
-And match $.data.id == "#present" ......................................... failed
+Then status 422 ........................................................... failed
 
 Stack Trace:
-com.intuit.karate.exception.KarateException: postapi.feature:19 - path: $.data.id, actual: null, expected: '#present', reason: actual json-path does not exist
-	at ✽.And match $.data.id == "#present" (postapi.feature:19)
+com.intuit.karate.exception.KarateException: postapi.feature:18 - status code was: 201, expected: 422, response time: 680, url: https://gorest.co.in/public/v1/users, response: {"data":{"gender":"male","name":"Sriram K","id":1709,"email":"sriramkukkadapu@gmail.com","status":"active"},"meta":null}
+	at ✽.Then status 422 (postapi.feature:18)
 
+And match $.data.id == "#present" ......................................... skipped
 And match $.data.email == "sriramkukkadapu@gmail.com" ..................... skipped</failure>
   </testcase>
 </testsuite>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.features.delete</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2022-01-30 06:13:46 AM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:33]">[1:33] Delete user with given id </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/features/delete.feature</span><span class="feature-description">POST API Feature</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:33]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:33]</span><span class="scenario-name">Delete user with given id </span>
+</div>
+<div class="scenario-time passed">ms: 1818</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="[1:33]bg">
+<div class="step-ref bg-step">&gt;&gt;</div>
+<div class="step-cell passed">Background:</div>
+</div>
+<div class="time-cell passed"></div>
+</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="1">
+<div class="step-ref bg-step">1</div>
+<div class="step-cell passed">* url 'https://gorest.co.in'</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="2">
+<div class="step-ref bg-step">2</div>
+<div class="step-cell passed">* def random_string =</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="preformatted" data-parent="2">function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i &lt; length; i++ ) {
+      result += characters.charAt(Math.floor(Math.random() * 
+ charactersLength));
+   }
+   return result;
+}</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="3">
+<div class="step-ref bg-step">3</div>
+<div class="step-cell passed">* def email = random_string(10)+'@gmail.com'</div>
+</div>
+<div class="time-cell passed">17</div>
+</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="4">
+<div class="step-ref bg-step">4</div>
+<div class="step-cell passed">* print email</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="4">06:13:44.668 [print] ebSK8IQ1wQ@gmail.com</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container">
+<div class="step-ref bg-step"></div>
+<div class="step-cell comment">#===========&gt; Body</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="5">
+<div class="step-ref bg-step">5</div>
+<div class="step-cell passed">* def body =</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="5">{
+            "name": "Sriram K",
+            "gender": "male",
+            "status": "active"
+					}</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="6">
+<div class="step-ref bg-step">6</div>
+<div class="step-cell passed">* body.email = email</div>
+</div>
+<div class="time-cell passed">6</div>
+</div>
+<div class="step-row" data-parent="[1:33]bg">
+<div class="step-container" id="7">
+<div class="step-ref bg-step">7</div>
+<div class="step-cell passed">* print body</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="preformatted" data-parent="7">06:13:44.678 [print] {
+  "name": "Sriram K",
+  "gender": "male",
+  "status": "active",
+  "email": "ebSK8IQ1wQ@gmail.com"
+}</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#1 create user using post api</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">Given path '/public/v1/users'</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">And request body</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="10">
+<div class="step-ref passed">10</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + tokenID</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="11">
+<div class="step-ref passed">11</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">928</div>
+</div>
+<div class="preformatted" data-parent="11">06:13:45.017 request:
+1 &gt; POST https://gorest.co.in/public/v1/users
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 84
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: gorest.co.in
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+{"name":"Sriram K","gender":"male","status":"active","email":"ebSK8IQ1wQ@gmail.com"}
+
+06:13:45.608 response time in milliseconds: 590.42
+1 &lt; 201
+1 &lt; Cache-Control: max-age=0, private, must-revalidate
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 30 Jan 2022 12:16:10 GMT
+1 &lt; ETag: W/"153e4f4dbfe30433627c86ffca823ff9"
+1 &lt; Location: https://gorest.co.in/public/v1/users/2642
+1 &lt; Referrer-Policy: strict-origin-when-cross-origin
+1 &lt; Server: nginx
+1 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Origin
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-RateLimit-Limit: 90
+1 &lt; X-RateLimit-Remaining: 89
+1 &lt; X-RateLimit-Reset: 1
+1 &lt; X-Request-Id: d6d53ab4-e13f-485a-a6c4-0eccb4096bf1
+1 &lt; X-Runtime: 0.033266
+1 &lt; X-XSS-Protection: 0
+{"meta":null,"data":{"id":2642,"name":"Sriram K","email":"ebSK8IQ1wQ@gmail.com","gender":"male","status":"active"}}</div>
+<div class="step-row">
+<div class="step-container" id="12">
+<div class="step-ref passed">12</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="13">
+<div class="step-ref passed">13</div>
+<div class="step-cell passed">And match $.data.id == "#present"</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#2 capture userid from post response</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="14">
+<div class="step-ref passed">14</div>
+<div class="step-cell passed">* def userId = $.data.id</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#3 delete user</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="15">
+<div class="step-ref passed">15</div>
+<div class="step-cell passed">Given path '/public/v1/users/' + userId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="16">
+<div class="step-ref passed">16</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + tokenID</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="17">
+<div class="step-ref passed">17</div>
+<div class="step-cell passed">When method delete</div>
+</div>
+<div class="time-cell passed">415</div>
+</div>
+<div class="preformatted" data-parent="17">06:13:45.615 request:
+2 &gt; DELETE https://gorest.co.in/public/v1/users/2642
+2 &gt; Accept-Encoding: gzip,deflate
+2 &gt; Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+2 &gt; Connection: Keep-Alive
+2 &gt; Host: gorest.co.in
+2 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+06:13:46.029 response time in milliseconds: 414.02
+2 &lt; 204
+2 &lt; Cache-Control: no-cache
+2 &lt; Connection: keep-alive
+2 &lt; Date: Sun, 30 Jan 2022 12:16:11 GMT
+2 &lt; Referrer-Policy: strict-origin-when-cross-origin
+2 &lt; Server: nginx
+2 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+2 &lt; Vary: Origin
+2 &lt; X-Content-Type-Options: nosniff
+2 &lt; X-Download-Options: noopen
+2 &lt; X-Frame-Options: SAMEORIGIN
+2 &lt; X-Permitted-Cross-Domain-Policies: none
+2 &lt; X-RateLimit-Limit: 90
+2 &lt; X-RateLimit-Remaining: 89
+2 &lt; X-RateLimit-Reset: 2
+2 &lt; X-Request-Id: 2921ceda-bb65-4c2e-bfe6-bfb261788997
+2 &lt; X-Runtime: 0.022003
+2 &lt; X-XSS-Protection: 0</div>
+<div class="step-row">
+<div class="step-container" id="18">
+<div class="step-ref passed">18</div>
+<div class="step-cell passed">Then status 204</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container">
+<div class="step-ref passed"></div>
+<div class="step-cell comment">#4 get the same user id and check if its deleted</div>
+</div>
+<div class="time-cell comment"></div>
+</div>
+<div class="step-row">
+<div class="step-container" id="19">
+<div class="step-ref passed">19</div>
+<div class="step-cell passed">Given path '/public/v1/users/' + userId</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="20">
+<div class="step-ref passed">20</div>
+<div class="step-cell passed">And header Authorization = 'Bearer ' + tokenID</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="21">
+<div class="step-ref passed">21</div>
+<div class="step-cell passed">When method get</div>
+</div>
+<div class="time-cell passed">430</div>
+</div>
+<div class="preformatted" data-parent="21">06:13:46.031 request:
+3 &gt; GET https://gorest.co.in/public/v1/users/2642
+3 &gt; Accept-Encoding: gzip,deflate
+3 &gt; Authorization: Bearer 6d3c1e07c99bc7aca4c3916ed5a148aa2174c5fcfe14e8e85069db2a24fcb0d4
+3 &gt; Connection: Keep-Alive
+3 &gt; Host: gorest.co.in
+3 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_281)
+
+06:13:46.460 response time in milliseconds: 427.59
+3 &lt; 404
+3 &lt; Cache-Control: no-cache
+3 &lt; Connection: keep-alive
+3 &lt; Content-Type: application/json; charset=utf-8
+3 &lt; Date: Sun, 30 Jan 2022 12:16:11 GMT
+3 &lt; Referrer-Policy: strict-origin-when-cross-origin
+3 &lt; Server: nginx
+3 &lt; Strict-Transport-Security: max-age=63072000; includeSubDomains
+3 &lt; Transfer-Encoding: chunked
+3 &lt; Vary: [Accept-Encoding, Origin]
+3 &lt; X-Content-Type-Options: nosniff
+3 &lt; X-Download-Options: noopen
+3 &lt; X-Frame-Options: SAMEORIGIN
+3 &lt; X-Permitted-Cross-Domain-Policies: none
+3 &lt; X-RateLimit-Limit: 90
+3 &lt; X-RateLimit-Remaining: 88
+3 &lt; X-RateLimit-Reset: 2
+3 &lt; X-Request-Id: 93218891-11b2-4ec5-ae4e-717a41182481
+3 &lt; X-Runtime: 0.021393
+3 &lt; X-XSS-Protection: 0
+{"meta":null,"data":{"message":"Resource not found"}}</div>
+<div class="step-row">
+<div class="step-container" id="22">
+<div class="step-ref passed">22</div>
+<div class="step-cell passed">Then status 404</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="23">
+<div class="step-ref passed">23</div>
+<div class="step-cell passed">And match $.data.message == "Resource not found"</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>

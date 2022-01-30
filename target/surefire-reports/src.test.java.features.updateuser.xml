@@ -1,0 +1,30 @@
+<testsuite failures="0" name="src/test/java/features/updateuser.feature" skipped="0" tests="1" time="1.338468">
+  <testcase classname="src.test.java.features.updateuser" name="Update user with given data" time="1.338468">
+    <system-out>* url 'https://gorest.co.in' .............................................. passed
+* def random_string = ..................................................... passed
+* def email = random_string(10)+'@gmail.com' .............................. passed
+* print email ............................................................. passed
+* def body_post = ......................................................... passed
+* body_post.email = email ................................................. passed
+* print body_post ......................................................... passed
+Given path '/public/v1/users' ............................................. passed
+And request body_post ..................................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+And match $.data.id == "#present" ......................................... passed
+* def userId = $.data.id .................................................. passed
+* print userId ............................................................ passed
+* def body_put = .......................................................... passed
+Given path '/public/v1/users/' +  userId .................................. passed
+And request body_put ...................................................... passed
+And header Authorization = 'Bearer ' + tokenID ............................ passed
+When method put ........................................................... passed
+Then status 200 ........................................................... passed
+And match $.data.id == "#present" ......................................... passed
+And match $.data.id == userId ............................................. passed
+And match $.data.name == "#present" ....................................... passed
+And match $.data.name == "Sriram K" ....................................... passed
+And match $.data.email == body_post.email ................................. passed</system-out>
+  </testcase>
+</testsuite>
