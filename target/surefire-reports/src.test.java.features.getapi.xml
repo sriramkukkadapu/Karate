@@ -1,8 +1,0 @@
-<testsuite failures="0" name="src/test/java/features/getapi.feature" skipped="0" tests="2" time="0">
-  <testcase classname="src.test.java.features.getapi" name="GET user details" time="0">
-    <system-out/>
-  </testcase>
-  <testcase classname="src.test.java.features.getapi" name="GET user details - User not found" time="0">
-    <system-out/>
-  </testcase>
-</testsuite>
