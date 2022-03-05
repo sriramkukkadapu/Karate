@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: apiexamples.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in apiexamples.TestRunner
+runTest  Time elapsed: 0 s  <<< ERROR!
+java.lang.RuntimeException: not found: Karate/src/test/java/apiexamples/getapi.feature
+

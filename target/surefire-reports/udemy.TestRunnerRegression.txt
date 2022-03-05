@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: udemy.TestRunnerRegression
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.086 s <<< FAILURE! - in udemy.TestRunnerRegression
+deleteAPITest[4][2]  Time elapsed: 0.33 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: 'Token ' + token
+<<<<
+org.graalvm.polyglot.PolyglotException: ReferenceError: "token" is not defined
+- <js>.:program(Unnamed:1)
+
+classpath:udemy/regression.feature:17
+
