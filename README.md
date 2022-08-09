@@ -1,5 +1,9 @@
 # Karate
 
+#To start Angular Realworld app
+Go to /Users/thw5795/eclipse-workspace/angular-realworld-example-app
+do yarn start
+
 #To debug a specific test in Karate
 TestRunner => File name of runner class i.e TestRunner.java <br>
 debugMethod => in TestRunner file method that invokes debug tags <br>
